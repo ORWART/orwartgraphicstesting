@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Refer a client to Lenorplus. Professional referral form for healthcare providers and partner organizations in Kampala, Uganda.">
+  <meta name="keywords" content="refer client, patient referral, healthcare referral, home care referral Uganda">
+  <meta property="og:title" content="Refer a Client - Lenorplus Home Health & Bedside Care">
+  <meta property="og:description" content="Professional Care. Compassionate Support. Better Living at Home.">
+  <meta property="og:type" content="website">
+  <title>Refer a Client - Lenorplus Home Health & Bedside Care</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': '#0a2a4a',
+            'medical-blue': '#0d6efd'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header"></div>
+  
+  <main id="main-content">
+    <section class="bg-navy text-white py-16 md:py-24 relative overflow-hidden" aria-labelledby="refer-heading">
+      <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy to-[#11345a]"></div>
+      <div class="max-w-4xl mx-auto px-4 text-center relative z-10 fade-in">
+        <nav class="mb-6" aria-label="Breadcrumb">
+          <ol class="flex items-center justify-center space-x-2 text-sm text-white/70">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true"><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+            <li><a href="professionals.html" class="hover:text-white transition-colors">For Professionals</a></li>
+            <li aria-hidden="true"><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+            <li class="text-white" aria-current="page">Refer a Client</li>
+          </ol>
+        </nav>
+        <h1 id="refer-heading" class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Refer a Client</h1>
+        <p class="text-white/90 text-lg">Connect patients with professional home healthcare services</p>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24" aria-labelledby="referral-form-heading">
+      <div class="max-w-3xl mx-auto px-4">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10 fade-in">
+          <div class="text-center mb-8">
+            <div class="w-16 h-16 mx-auto mb-4 bg-medical-blue/10 rounded-2xl flex items-center justify-center">
+              <i data-lucide="user-plus" class="w-8 h-8 text-medical-blue" aria-hidden="true"></i>
+            </div>
+            <h2 id="referral-form-heading" class="text-2xl md:text-3xl font-bold text-navy mb-2">Professional Referral Form</h2>
+            <p class="text-gray-600">Complete this form to refer a client. Our team will contact you within 24 hours to discuss the client's needs and appropriate service arrangements.</p>
+          </div>
+          
+          <form id="referClientForm" class="space-y-6" novalidate>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="refName" class="form-label">Referring Person's Name <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="text" id="refName" name="refName" required class="form-input" placeholder="Dr. Jane Smith" data-validate="required minLength:2" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="organization" class="form-label">Organization <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="text" id="organization" name="organization" required class="form-input" placeholder="Hospital, Clinic, Practice" data-validate="required minLength:2" autocomplete="organization">
+              </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="form-group">
+                <label for="professionRole" class="form-label">Professional Role <span class="text-red-500" aria-hidden="true">*</span></label>
+                <select id="professionRole" name="professionRole" required class="form-select" data-validate="required">
+                  <option value="">Select role</option>
+                  <option value="doctor">Doctor / Physician</option>
+                  <option value="nurse">Registered Nurse</option>
+                  <option value="midwife">Midwife</option>
+                  <option value="psychologist">Psychologist</option>
+                  <option value="psychiatrist">Psychiatrist</option>
+                  <option value="physiotherapist">Physiotherapist</option>
+                  <option value="counsellor">Counsellor</option>
+                  <option value="social-worker">Social Worker</option>
+                  <option value="other">Other Healthcare Professional</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="refPhone" class="form-label">Phone Number <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="tel" id="refPhone" name="refPhone" required class="form-input" placeholder="0752 406556" data-validate="required phone" autocomplete="tel">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="refEmail" class="form-label">Email <span class="text-red-500" aria-hidden="true">*</span></label>
+              <input type="email" id="refEmail" name="refEmail" required class="form-input" placeholder="dr.smith@hospital.org" data-validate="required email" autocomplete="email">
+            </div>
+            
+            <div class="border-t border-gray-200 my-6 pt-6">
+              <h3 class="text-lg font-semibold text-navy mb-4">Client Information</h3>
+              
+              <div class="form-group">
+                <label for="clientName" class="form-label">Client Name <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="text" id="clientName" name="clientName" required class="form-input" placeholder="John Doe" data-validate="required minLength:2" autocomplete="name">
+              </div>
+              
+              <div class="form-group">
+                <label for="clientContact" class="form-label">Client Contact Information</label>
+                <input type="text" id="clientContact" name="clientContact" class="form-input" placeholder="Phone number or email" data-validate="phone" autocomplete="tel">
+              </div>
+              
+              <div class="form-group">
+                <label for="requestedServiceRef" class="form-label">Requested Service <span class="text-red-500" aria-hidden="true">*</span></label>
+                <select id="requestedServiceRef" name="requestedServiceRef" required class="form-select" data-validate="required">
+                  <option value="">Select service</option>
+                  <option value="bedside-nursing">Bedside Nursing</option>
+                  <option value="caregiving">Caregiving Services</option>
+                  <option value="elderly-care">Elderly Care</option>
+                  <option value="post-op-care">Post-operative Care</option>
+                  <option value="palliative-care">Palliative Care</option>
+                  <option value="physiotherapy">Physiotherapy Support</option>
+                  <option value="mental-health">Mental Health Support</option>
+                  <option value="family-support">Family Support</option>
+                  <option value="orthopedic-care">Orthopedic Care</option>
+                  <option value="child-mental-health">Child Mental Health</option>
+                  <option value="not-sure">Not Sure Yet</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="referralInfo" class="form-label">Referral Details <span class="text-red-500" aria-hidden="true">*</span></label>
+                <textarea id="referralInfo" name="referralInfo" rows="5" required class="form-textarea" placeholder="Reason for referral, medical condition, current medications, specific care needs, discharge date (if applicable), and any other relevant information." data-validate="required minLength:20"></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="preferredContactRef" class="form-label">Preferred Communication Method <span class="text-red-500" aria-hidden="true">*</span></label>
+                <select id="preferredContactRef" name="preferredContactRef" required class="form-select" data-validate="required">
+                  <option value="phone">Phone Call</option>
+                  <option value="email">Email</option>
+                  <option value="both">Both Phone & Email</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="bg-gray-50 rounded-xl p-6">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" name="consentRef" required class="mt-1 w-5 h-5 text-navy rounded focus:ring-navy border-gray-300" data-validate="required">
+                  <span class="text-sm text-gray-600">I confirm that I have appropriate authority to refer this client and consent to sharing necessary information with Lenorplus for care coordination. <a href="privacy.html" class="text-medical-blue hover:underline">Privacy Policy</a> <span class="text-red-500" aria-hidden="true">*</span></span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <button type="submit" class="btn btn-primary flex-1 py-4">
+                <span class="btn-text">
+                  <i data-lucide="send" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                  Submit Referral
+                </span>
+                <span class="loading hidden" aria-hidden="true"></span>
+              </button>
+              <a href="professionals.html" class="btn btn-secondary flex-1 py-4">
+                <i data-lucide="arrow-left" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Back to Professionals
+              </a>
+            </div>
+            
+            <p class="text-xs text-gray-500 text-center">Fields marked with <span class="text-red-500" aria-hidden="true">*</span> are required. All information is kept confidential.</p>
+          </form>
+        </div>
+        
+        <div class="mt-10 grid md:grid-cols-3 gap-6 fade-in">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 bg-green-600/10 rounded-xl flex items-center justify-center">
+              <i data-lucide="shield-check" class="w-6 h-6 text-green-600" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-semibold text-navy mb-2">Confidential</h3>
+            <p class="text-sm text-gray-600">HIPAA-compliant information handling</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 bg-blue-600/10 rounded-xl flex items-center justify-center">
+              <i data-lucide="clock" class="w-6 h-6 text-blue-600" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-semibold text-navy mb-2">Fast Response</h3>
+            <p class="text-sm text-gray-600">We'll contact you within 24 hours</p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 text-center">
+            <div class="w-12 h-12 mx-auto mb-4 bg-purple-600/10 rounded-xl flex items-center justify-center">
+              <i data-lucide="users" class="w-6 h-6 text-purple-600" aria-hidden="true"></i>
+            </div>
+            <h3 class="font-semibold text-navy mb-2">Coordinated Care</h3>
+            <p class="text-sm text-gray-600">Seamless transition from your facility</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-50" aria-labelledby="referral-process-heading">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-12 md:mb-16 fade-in">
+          <h2 id="referral-process-heading" class="text-3xl md:text-4xl font-bold text-navy mb-4">What Happens After Referral?</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our streamlined process ensures smooth transitions</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6">
+          <article class="relative text-center p-6 fade-in">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
+            <div class="pt-8">
+              <h3 class="text-lg font-bold text-navy mb-2">Receive & Review</h3>
+              <p class="text-gray-600 text-sm">We review the referral and contact you for any clarifications</p>
+            </div>
+          </article>
+          <article class="relative text-center p-6 fade-in">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
+            <div class="pt-8">
+              <h3 class="text-lg font-bold text-navy mb-2">Client Assessment</h3>
+              <p class="text-gray-600 text-sm">Our team conducts a comprehensive in-home assessment</p>
+            </div>
+          </article>
+          <article class="relative text-center p-6 fade-in">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
+            <div class="pt-8">
+              <h3 class="text-lg font-bold text-navy mb-2">Care Plan</h3>
+              <p class="text-gray-600 text-sm">We develop a personalized care plan with your input</p>
+            </div>
+          </article>
+          <article class="relative text-center p-6 fade-in">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-medical-blue text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
+            <div class="pt-8">
+              <h3 class="text-lg font-bold text-navy mb-2">Service Begins</h3>
+              <p class="text-gray-600 text-sm">Care starts with ongoing communication to your office</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-navy text-white" aria-labelledby="cta-heading">
+      <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+        <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-6">Have Questions About Referrals?</h2>
+        <p class="text-white/90 mb-10 max-w-2xl mx-auto text-lg">Our professional liaison team is available to discuss partnership opportunities and referral processes.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0752406556" class="px-8 py-4 bg-medical-blue text-white font-medium rounded-lg hover:bg-blue-700 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-medical-blue focus:ring-offset-2 focus:ring-offset-navy inline-flex items-center">
+            <i data-lucide="phone" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+            Call Referral Line
+          </a>
+          <a href="professionals.html" class="px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-navy transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-navy">
+            For Professionals
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    initEmailJS();
+    lucide.createIcons();
+  </script>
+</body>
+</html>
