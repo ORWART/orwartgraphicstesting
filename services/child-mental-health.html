@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Child and adolescent mental health support including emotional wellbeing, behavioral support, and family counseling.">
+  <title>Child & Adolescent Mental Health - Lenorplus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'navy': '#0a2a4a', 'medical-blue': '#0d6efd' },
+          fontFamily: { 'sans': ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center space-x-3">
+          <img src="../images/logo.jpeg" alt="Lenorplus Logo" class="w-10 h-10 object-contain">
+          <div><div class="text-sm font-bold text-navy">LENORPLUS</div><div class="text-xs text-gray-500 -mt-1">Home Health & Bedside Care</div></div>
+        </a>
+        <a href="../request-care.html" class="hidden xl:inline-block px-5 py-2 bg-medical-blue text-white font-medium rounded-lg">Request Care</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-navy text-white py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4">Child & Adolescent Mental Health</h1>
+      <p class="text-white/90">Support for emotional wellbeing and behavioral challenges</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-2xl font-bold text-navy mb-6">Bringing Mental Health Support Closer to the Community</h2>
+          <p class="text-gray-600 mb-6">
+            Our mental health services for children and adolescents provide compassionate, home-based support for young people experiencing emotional challenges.
+          </p>
+          
+          <h3 class="text-xl font-bold text-navy mb-4">Services Include:</h3>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Emotional wellbeing support</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Behavioral support</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Family support</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Counselling</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Mental-health education</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Referral and coordination for specialized care</span></li>
+            <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 text-medical-blue mt-0.5 mr-3 flex-shrink-0"></i><span>Support for families and caregivers</span>
+            </li>
+          </ul>
+        </li>
+        
+        <img src="../images/service-child-mental.png" alt="Child mental health support" class="w-full rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 py-8 text-center text-gray-400 text-sm">
+      <p>&copy; 2024 Lenorplus Home Health and Bedside Care. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>lucide.createIcons()</script>
+</body>
+</html>
